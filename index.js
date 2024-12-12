@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 // Timestamp endpoint
-app.get("/timestamp/:date?", (req, res) => {
+app.get("/api/:date?", (req, res) => {
   const dateParam = req.params.date;
 
   let date;
