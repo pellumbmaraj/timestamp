@@ -22,12 +22,12 @@ app.get("/api/:date?", (req, res) => {
   }
 
   if (parsedDate.toString() === "Invalid Date") {
-    return res.json({ "error": "Invalid Date" });
+    return res.json({ error: "Invalid Date" });
   }
 
   res.json({
-    "unix": parsedDate.getTime(),
-    "utc": parsedDate.toUTCString(),
+    unix: parsedDate.getTime(),
+    utc: parsedDate.toUTCString(),
   });
 });
 
